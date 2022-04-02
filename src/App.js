@@ -21,9 +21,9 @@ function App() {
       <Route exact path="/Contact" element={<Contact />} />
       <Route exact path="/About" element={<About />} />
       <Route path="/User/:fname" element={<User />} />
-      <Route path="/Location" element={<Location />} />
-      <Route path="/Search" element={<Search />} />
-      <Route element={<Error />} />
+      <Route exact path="/Location" element={<Location />} />
+      <Route exact path="/Search" element={<Search />} />
+      <Route path="/*" element={<Error />} />
     </Routes>
   </>
   );
